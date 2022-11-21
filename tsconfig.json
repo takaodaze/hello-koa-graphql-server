@@ -1,0 +1,21 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "lib": ["es2020"],
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "types": ["node"],
+        "strict": true,
+        "baseUrl": "src"
+    },
+    "include": ["src/**/*"],
+    "ts-node": {
+        "swc": true,
+        "files": true,
+        "require": ["tsconfig-paths/register"]
+    }
+}
